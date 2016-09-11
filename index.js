@@ -33,8 +33,9 @@ co(function*() {
   logEpic('Pushing application to Deis');
   yield deis.pushApplication(options.deisApp, clonePath);
 
-  logEpic('Migration done successfully!');
-  logEpic('\nSome useful commands:');
+  logEpic(chalk.green('Migration done successfully!'));
+
+  log(`\n\n${chalk.bold(`Some useful commands:`)}`);
   log(`Open: ${chalk.dim(`deis open -a ${options.deisApp}`)}`);
   log(`Scale up: ${chalk.dim(`deis scale cmd=2 -a ${options.deisApp}`)}`);
   log(`Destroy: ${chalk.dim(`deis destroy --app=${options.deisApp} --confirm=${options.deisApp}`)}`);
