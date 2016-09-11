@@ -1,0 +1,26 @@
+{
+  "name": "@emartech/heroku-to-deis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "bin/htd",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Emarsys",
+  "license": "MIT",
+  "dependencies": {
+    "app-root-path": "2.0.1",
+    "chalk": "^1.1.3",
+    "child-process-promise": "2.1.3",
+    "co": "4.6.0",
+    "debug": "2.2.0",
+    "heroku-client": "3.0.0-beta3",
+    "lodash": "4.15.0",
+    "nodegit": "0.14.1",
+    "rimraf": "2.5.4",
+    "superagent": "2.2.0",
+    "yargs": "5.0.0"
+  }
+}
