@@ -39,6 +39,7 @@ co(function*() {
   log(`Open: ${chalk.dim(`deis open -a ${options.deisApp}`)}`);
   log(`Scale up: ${chalk.dim(`deis scale web=2 -a ${options.deisApp}`)}`);
   log(`Destroy: ${chalk.dim(`deis destroy --app=${options.deisApp} --confirm=${options.deisApp}`)}`);
+  log(`\n\n${chalk.bold('Remember:')} only the ${chalk.dim('web')} and ${chalk.dim('cmd')} processes are scaled up to 1 pod, you should scale up the others manually!`);
 }).catch(function(err) {
   log(`\n\n${chalk.red(`There was an error while migrating :(`)}\n\n`);
   log(err);
